@@ -43,6 +43,7 @@ This layout maps cleanly to an academic method section: modality-specific encode
 - Environment variable: `YESEG_ROOT`
 - Split protocol: official `train.txt` / `val.txt`
 - Training classes: 6 compact classes after dropping raw classes `0` and `7`
+- Official project: https://github.com/yeyuanxin110/YESeg-OPT-SAR
 
 
 ### Pohang
@@ -51,6 +52,11 @@ This layout maps cleanly to an academic method section: modality-specific encode
 - Environment variable: `POHANG_ROOT`
 - Training classes: ID `0` = Buildings, `1` = Farmland, `2` = Greenery, `3` = Water, `4` = Roads, and `5` = Other; raw label `255` is remapped to class ID `5` (`Other`) rather than ignored.
 - Split protocol: `train_pohang.txt` / `val_pohang.txt` are generated in `block` mode from both `cloud` and `no_cloud` scenes with validation ratio `0.2`, seed `42`, block size `32`, and one adjacent gap block excluded from training around each validation block.
+- Official project: https://github.com/XD-MG/DDHRNet
 
+### Declaration
 
+These datasets were created and released by their original authors. We use them for research and do not claim ownership of the source data. Users should follow the original providers' licenses, access conditions, and terms of use, and cite the corresponding dataset publications.
+
+The download links are maintained by the original providers and may change over time. Reproducing our experiments requires the preprocessing procedures, label mappings, and data splits described in the paper and accompanying code.
 
