@@ -43,8 +43,7 @@ This layout maps cleanly to an academic method section: modality-specific encode
 - Environment variable: `YESEG_ROOT`
 - Split protocol: official `train.txt` / `val.txt`
 - Training classes: 6 compact classes after dropping raw classes `0` and `7`
-- Default checkpoint name: `checkpoints/best_gcfnet_final.pth`
-- Optional bias search result: `checkpoints/best_bias_drop0_7.json`
+
 
 ### Pohang
 
@@ -52,6 +51,6 @@ This layout maps cleanly to an academic method section: modality-specific encode
 - Environment variable: `POHANG_ROOT`
 - Training classes: ID `0` = Buildings, `1` = Farmland, `2` = Greenery, `3` = Water, `4` = Roads, and `5` = Other; raw label `255` is remapped to class ID `5` (`Other`) rather than ignored.
 - Split protocol: `train_pohang.txt` / `val_pohang.txt` are generated in `block` mode from both `cloud` and `no_cloud` scenes with validation ratio `0.2`, seed `42`, block size `32`, and one adjacent gap block excluded from training around each validation block.
-- Default checkpoint name: `checkpoints/best_gcfnet_pohang.pth`
+
 
 
